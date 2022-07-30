@@ -150,4 +150,15 @@ public class User implements UserDetails, Serializable {
 	public boolean isEnabled() {
 		return true;
 	}
+	
+	//Busca na lista de perfis(roles) se o perfil passado como parâmetro existe para esse usuário e retorna true se encontrar e false não percorrer toda a lista e não encontrar
+	public boolean hasRole(String roleName) {
+		for (Role role : roles ) {
+			if(role.getAuthority().equals(roleName)) {
+				return true;
+			}
+		}
+		
+		return false;
+	}
 }
