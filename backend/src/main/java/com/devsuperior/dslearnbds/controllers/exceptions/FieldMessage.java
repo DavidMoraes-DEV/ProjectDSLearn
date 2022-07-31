@@ -1,4 +1,4 @@
-package com.devsuperior.dslearnbds.resources.exceptions;
+package com.devsuperior.dslearnbds.controllers.exceptions;
 
 import java.io.Serializable;
 
